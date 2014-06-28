@@ -19,8 +19,8 @@ extractorOptionParser :: ParserInfo ExtractorOptions
 extractorOptionParser =
     info (helper <*> opts)
     (fullDesc <> 
-        progDesc "Outputs the text content of a PDF file" <>
-        header "pdf2txt - extracts the textual content of a PDF file")
+        progDesc "Outputs the textual content of a PDF file" <>
+        header "unpdf - extracts the textual content of a PDF file")
 
 extractFile :: ExtractorOptions -> IO ()
 extractFile ExtractorOptions{..} = do
